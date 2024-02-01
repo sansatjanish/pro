@@ -1,53 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        .login-container {
-            width: 300px;
-            padding: 16px;
-            background-color: #ffffff;
-            margin: 0 auto;
-            margin-top: 100px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px 0px #000;
-        }
-        .login-container h2 {
-            text-align: center;
-            color: #5b6574;
-        }
-        .login-container input {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0 15px 0;
-            border: none;
-            background: #f1f1f1;
-        }
-        .login-container button {
-            background-color: #4caf50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
-        }
-        .login-container button:hover {
-            opacity:1;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <div class="login-container">
-        <h2>Login</h2>
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-        <button type="submit">Login</button>
+  <div class="container">
+    <div id="time">
+      <div class="circle" style="--color: #ff2972">
+        <div class="dots h_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="hh"></circle>
+        </svg>
+        <div id="hours">00</div>
+      </div>
+      <div class="circle" style="--color: #fee800">
+        <div class="dots m_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="mm"></circle>
+        </svg>
+        <div id="minutes">00</div>
+      </div>
+      <div class="circle" style="--color: #04fc43">
+        <div class="dots s_dot"></div>
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="ss"></circle>
+        </svg>
+        <div id="seconds">00</div>
+      </div>
+      <div class="ap">
+        <div id="ampm">AM</div>
+      </div>
     </div>
+  </div>
 </body>
 </html>
