@@ -1,2 +1,0 @@
-# pro
-making an project
