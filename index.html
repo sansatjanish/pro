@@ -1,27 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            width: 300px;
+            padding: 16px;
+            background-color: #ffffff;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px 0px #000;
+        }
+        .login-container h2 {
+            text-align: center;
+            color: #5b6574;
+        }
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+        .login-container button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+        .login-container button:hover {
+            opacity:1;
+        }
+    </style>
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form" onsubmit="checkLogin(); return false;">
-            <h2>Login</h2>
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-
-            <button type="submit">Login</button>
-
-            <div id="login-message" class="hidden">You are logged in!</div>
-        </form>
+        <h2>Login</h2>
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+        <button type="submit">Login</button>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
