@@ -54,3 +54,8 @@ button {
 button:hover {
     background: linear-gradient(to right, #ff4b2b, #ff416c);
 }
+/* Add this style to hide the login message initially */
+.hidden {
+    display: none;
+}
+
