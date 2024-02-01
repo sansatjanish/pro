@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $conn = new mysqli("localhost", "yourusername", "yourpassword", "yourdatabase");
+    $conn = new mysqli("localhost", "root", "#Satish123", "sansat");
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
