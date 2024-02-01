@@ -2,7 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f2f2f2;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: #fff;
 }
 
 .login-container {
@@ -13,7 +14,7 @@ body {
 }
 
 .login-form {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 8px;
@@ -22,13 +23,13 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: #4a00e0;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
-    color: #666;
+    color: #333;
 }
 
 input {
@@ -41,7 +42,7 @@ input {
 }
 
 button {
-    background-color: #4caf50;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -51,5 +52,5 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background: linear-gradient(to right, #ff4b2b, #ff416c);
 }
